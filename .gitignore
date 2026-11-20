@@ -16,3 +16,6 @@ Thumbs.db
 # AI 协作本地数据（会话记忆与缓存不入库）
 .workbuddy/memory/
 .workbuddy/cache/
+
+# 本地密钥
+.env

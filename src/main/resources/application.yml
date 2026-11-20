@@ -1,0 +1,91 @@
+server:
+  port: 8080
+  shutdown: graceful
+
+spring:
+  application:
+    name: aics
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/aics}
+    username: ${DB_USER:aics}
+    password: ${DB_PASSWORD:aics}
+    hikari:
+      maximum-pool-size: 12
+      minimum-idle: 2
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 12MB
+  web:
+    resources:
+      # demo/index.html 不复制一份到 resources/static，避免两处维护（技术设计 §8）
+      static-locations: file:./demo/,classpath:/static/
+      cache:
+        period: 0
+  mvc:
+    async:
+      # 与 aics.sse.timeout-ms 保持同量级
+      request-timeout: 200000
+  jackson:
+    default-property-inclusion: non_null
+
+aics:
+  llm:
+    base-url: ${DEEPSEEK_BASE_URL:https://api.deepseek.com}
+    api-key: ${DEEPSEEK_API_KEY:}
+    completions-path: /v1/chat/completions
+    model: ${DEEPSEEK_MODEL:deepseek-flash}
+    temperature: 0.2
+    max-tokens: 1024
+    # 必须关闭思考模式，否则首字延迟翻倍（技术设计 §1.3 / §3.4.4）
+    thinking: disabled
+
+  embedding:
+    base-url: ${EMBEDDING_BASE_URL:https://api.siliconflow.cn/v1}
+    api-key: ${EMBEDDING_API_KEY:}
+    embeddings-path: /embeddings
+    model: ${EMBEDDING_MODEL:BAAI/bge-m3}
+    dimensions: 1024
+    batch-size: 16
+    max-retries: 2
+
+  retrieval:
+    top-k: 6
+    # 必须用评测集校准（技术设计 §3.3.2），此处仅为基线值
+    score-threshold: 0.70
+    per-doc-limit: 3
+    candidate-multiplier: 3
+    rewrite-enabled: true
+
+  chunking:
+    max-chars: 800
+    min-chars: 120
+    overlap-chars: 80
+    max-heading-level: 3
+
+  memory:
+    recent-turns: 6
+    summary-trigger-turns: 12
+    summary-max-chars: 300
+
+  prompt:
+    company-name: 示例科技
+    max-chunk-chars-in-prompt: 500
+
+  tool:
+    timeout-ms: 3000
+    max-consecutive-failures: 2
+
+  sse:
+    timeout-ms: 180000
+    heartbeat-ms: 15000
+
+logging:
+  level:
+    root: INFO
+    com.aics: INFO
+    org.springframework.jdbc.core: WARN
