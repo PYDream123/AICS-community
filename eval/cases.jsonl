@@ -1,0 +1,26 @@
+{"id":"c001","question":"七天无理由退货的运费谁承担","expectDoc":"售后服务政策-v3.md","expectSection":"2.3 退货运费承担","expectKeywords":["消费者承担"],"shouldRefuse":false,"history":[]}
+{"id":"c002","question":"退货运费要怎么算，质量问题也由我出吗","expectDoc":"售后服务政策-v3.md","expectSection":"2.3 退货运费承担","expectKeywords":["质量问题"],"shouldRefuse":false,"history":[]}
+{"id":"c003","question":"七天无理由退货需要满足什么条件","expectDoc":"售后服务政策-v3.md","expectSection":"2.1 七天无理由适用条件","expectKeywords":["签收后 7 日"],"shouldRefuse":false,"history":[]}
+{"id":"c004","question":"已经拆封的商品还能七天无理由吗","expectDoc":"售后服务政策-v3.md","expectSection":"2.1 七天无理由适用条件","expectKeywords":["个护类"],"shouldRefuse":false,"history":[]}
+{"id":"c005","question":"退款提交后多久能到账","expectDoc":"售后服务政策-v3.md","expectSection":"3.1 退款时效","expectKeywords":["工作日"],"shouldRefuse":false,"history":[]}
+{"id":"c006","question":"用掉的优惠券在退款后会退回账户吗","expectDoc":"售后服务政策-v3.md","expectSection":"3.2 退款金额计算","expectKeywords":["优惠券"],"shouldRefuse":false,"history":[]}
+{"id":"c007","question":"你们的保修期多久","expectDoc":"产品保修条款.md","expectSection":"1.1 保修期限","expectKeywords":["12 个月"],"shouldRefuse":false,"history":[]}
+{"id":"c008","question":"主板和电池保修多长时间","expectDoc":"产品保修条款.md","expectSection":"1.1 保修期限","expectKeywords":["24 个月"],"shouldRefuse":false,"history":[]}
+{"id":"c009","question":"门锁进水了还保修吗","expectDoc":"产品保修条款.md","expectSection":"1.4 保修范围除外情形","expectKeywords":["人为进液"],"shouldRefuse":false,"history":[]}
+{"id":"c010","question":"那过了保修期维修怎么收费","expectDoc":"产品保修条款.md","expectSection":"2.2 保外维修收费标准","expectKeywords":["80 元"],"shouldRefuse":false,"history":[{"role":"user","content":"你们的保修期多久"},{"role":"assistant","content":"整机保修 12 个月，主板、屏幕、电池等主要部件保修 24 个月，自签收之日起算 [1]。"}]}
+{"id":"c011","question":"保外维修换一块电池多少钱","expectDoc":"产品保修条款.md","expectSection":"2.2 保外维修收费标准","expectKeywords":["120 元"],"shouldRefuse":false,"history":[]}
+{"id":"c012","question":"寄修的话运费谁出","expectDoc":"产品保修条款.md","expectSection":"2.4 寄修说明","expectKeywords":["寄出运费"],"shouldRefuse":false,"history":[]}
+{"id":"c013","question":"江浙沪一般多久能送到","expectDoc":"物流配送说明.txt","expectSection":"2.1 配送时效","expectKeywords":["次日达"],"shouldRefuse":false,"history":[]}
+{"id":"c014","question":"新疆可以发货吗","expectDoc":"物流配送说明.txt","expectSection":"2.2 配送范围","expectKeywords":["新疆"],"shouldRefuse":false,"history":[]}
+{"id":"c015","question":"满多少可以包邮","expectDoc":"物流配送说明.txt","expectSection":"2.4 运费标准","expectKeywords":["199"],"shouldRefuse":false,"history":[]}
+{"id":"c016","question":"快递显示已签收但我没收到怎么办","expectDoc":"物流配送说明.txt","expectSection":"3.3 未收到货","expectKeywords":["48 小时"],"shouldRefuse":false,"history":[]}
+{"id":"c017","question":"积分怎么累计，多久到账","expectDoc":"会员积分规则.md","expectSection":"3.1 积分获取与抵扣","expectKeywords":["100 分抵扣 1 元"],"shouldRefuse":false,"history":[]}
+{"id":"c018","question":"积分有效期是多久，过期会清零吗","expectDoc":"会员积分规则.md","expectSection":"4.1 有效期规则","expectKeywords":["24 个月"],"shouldRefuse":false,"history":[]}
+{"id":"c019","question":"积分可以转赠给朋友吗","expectDoc":"会员积分规则.md","expectSection":"5.1 积分不可转让","expectKeywords":["不可转让"],"shouldRefuse":false,"history":[]}
+{"id":"c020","question":"金卡会员有哪些权益","expectDoc":"会员积分规则.md","expectSection":"1.2 等级权益","expectKeywords":["八折"],"shouldRefuse":false,"history":[]}
+{"id":"c021","question":"你们公司在东南亚有代理商吗","shouldRefuse":true,"history":[]}
+{"id":"c022","question":"下单可以用加密货币支付吗","shouldRefuse":true,"history":[]}
+{"id":"c023","question":"能不能帮我起草一份企业采购合同模板","shouldRefuse":true,"history":[]}
+{"id":"c024","question":"贵公司是什么时候上市的，股价多少","shouldRefuse":true,"history":[]}
+{"id":"c025","question":"你们的智能门锁支持接入米家生态吗","shouldRefuse":true,"history":[]}
+{"id":"c026","question":"门锁可以承重多少公斤，能当扶手用吗","shouldRefuse":true,"history":[]}
